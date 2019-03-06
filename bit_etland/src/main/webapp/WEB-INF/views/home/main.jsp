@@ -15,7 +15,7 @@
     
         <div class="grid-item" id="left">
     	객체지향<br /><br />
-    	<a href="#" id="oop_access" >접속하기</a><br />
+    	<a href="#" id="oop_access">접속하기</a><br />
     </div>
     <div class="grid-item" id="right">
     	알고리즘<br /><br />

@@ -1,4 +1,4 @@
-package com.bit_etland.controller;
+package com.bit_etland.web.controller;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
