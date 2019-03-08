@@ -21,6 +21,74 @@
 		<commons-fileupload-version>1.3.1</commons-fileupload-version>
 		<commons-io-version>2.4</commons-io-version>
 	</properties>
+	
+	 <contributors>
+    <contributor>
+      <name>KIM TAEHYUK</name>
+      <email>adam.gent@evocatus.com</email>
+    </contributor>
+    <contributor>
+      <name>Andrea Selva</name>
+      <email>selva.andre@gmail.com</email>
+    </contributor>
+    <contributor>
+      <name>Antonio Sánchez</name>
+      <email>juntandolineas@gmail.com</email>
+    </contributor>
+    <contributor>
+      <name>Arkadi Shishlov</name>
+      <email>arkadi.shishlov@gmail.com</email>
+    </contributor>
+    <contributor>
+      <name>Axel Doerfler</name>
+      <email>axel.doerfler@gmail.com</email>
+    </contributor>
+    <contributor>
+      <name>Chris Dadej</name>
+      <email>chris.dadej@gmail.com</email>
+    </contributor>
+    <contributor>
+      <name>Denis Vygovskiy</name>
+      <email>qizant@gmail.com</email>
+    </contributor>
+    <contributor>
+      <name>Franta Mejta</name>
+      <email>mejta@rewor.cz</email>
+    </contributor>
+    <contributor>
+      <name>Jurriaan Pruys</name>
+      <email>jurriaan@pruys.com</email>
+    </contributor>
+    <contributor>
+      <name>Keith Wong</name>
+      <email>wongkwl@gmail.com</email>
+    </contributor>
+    <contributor>
+      <name>Lasse Voss</name>
+      <email>lasse.voss@motor-talk-gmbh.de</email>
+    </contributor>
+    <contributor>
+      <name>Luke Stevens</name>
+      <email>nosuchluke@gmail.com</email>
+    </contributor>
+    <contributor>
+      <name>Paul Krause</name>
+      <email>paulkrause88@alum.mit.edu</email>
+    </contributor>
+    <contributor>
+      <name>Peter Leibiger</name>
+      <email>kuhnroyal@gmail.com</email>
+    </contributor>
+    <contributor>
+      <name>Riccardo Cossu</name>
+      <email>riccardo.cossu@gmail.com</email>
+    </contributor>
+    <contributor>
+      <name>Tomáš Neuberg</name>
+      <email>neuberg@m-atelier.cz</email>
+    </contributor>
+  </contributors>
+	
 	<dependencies>
 		<!-- Spring -->
 		<dependency>
