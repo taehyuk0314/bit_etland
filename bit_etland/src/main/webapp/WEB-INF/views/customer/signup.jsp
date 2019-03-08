@@ -1,112 +1,63 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <jsp:include page="../home/top.jsp"/>
-<div class="grid-item" id= "side_bar">
-<h1>회원가입</h1>
+<link rel="stylesheet" href="${css}/employee/register.css" />
+<div class="grid-item" id="side_menu">
+ 	<h1><font style="font-size: 30px">회원 등록</font></h1>
 </div>
-<div class="grid-item" id= "content" style="border:1px solid black">
-<form id="form"  class="form-horizontal">
-<div id="register-container" class="form-group">
-	<label class="control-label col-sm-2" >아이디 :</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" 
-      		 id="customer_id" name="customer_id" placeholder="영어 숫자만 입력" >
-    </div>
+<div class="grid-item" id="content">
+<form id="form" name="form" >
+<div class="input-group input-group-lg">
+  <span class="input-group-addon" id="basic-addon1">I  D</span>
+  <input type="text" class="form-control" placeholder="ID" aria-describedby="sizing-addon1" id="cusid" name="cusid">
 </div>
-<div id="register-container" class="form-group">    
-    <label class="control-label col-sm-2" >비밀번호 :</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" 
-      		 id="password" name="password" placeholder="기본값 1" >
-    </div>
+<div class="input-group input-group-lg">
+  <span class="input-group-addon" id="basic-addon1">이  름</span>
+  <input type="text" class="form-control" placeholder="name" aria-describedby="sizing-addon1" id="cusname" name="cusname">
 </div>
-<div id="register-container" class="form-group">      
-    <label class="control-label col-sm-2" >고객이름 :</label>
-    <div class="col-sm-10">
-    <input type="text" class="form-control" 
-      		 id="customer_name" name="customer_name" placeholder="한글 입력" >
-    </div>
-</div>    
-<div id="register-container" class="form-group">    
-    <label class="control-label col-sm-2" >주민번호 :</label>
-    <div class="col-sm-10">
-    <input type="text" class="form-control" 
-      		 id="ssn" name="ssn" placeholder="예) 900101-1" >
-    </div>
+<div class="input-group input-group-lg">
+  <span class="input-group-addon" id="basic-addon1">비밀번호</span>
+  <input type="text" class="form-control" placeholder="password" aria-describedby="sizing-addon1" id="pass" name="pass">
 </div>
-<div id="register-container" class="form-group">    
-    <label class="control-label col-sm-2" >휴대폰 :</label>
-    <div class="col-sm-10">
-    <input type="text" class="form-control" 
-      		 id=phone name="phone" placeholder="-없이 숫자만 입력" >
-    </div>
+<div class="input-group input-group-lg">
+  <span class="input-group-addon" id="basic-addon1">주민번호</span>
+  <input type="text" class="form-control" placeholder="ssn" aria-describedby="sizing-addon1" id="ssn" name="ssn">
 </div>
-<div id="register-container" class="form-group">    
-    <label class="control-label col-sm-2" >우편번호 :</label>
-    <div class="col-sm-10">
-    <input type="text" class="form-control" 
-      		 id=postal_code name="postal_code" placeholder="우편번호 5자리" >
-    </div>
+<div class="input-group input-group-lg">
+  <span class="input-group-addon" id="basic-addon1">핸드폰번호</span>
+  <input type="text" class="form-control" placeholder="phone" aria-describedby="sizing-addon1" id="phone" name="phone">
 </div>
-<div id="register-container" class="form-group">    
-    <label class="control-label col-sm-2" >주 소 :</label>
-    <div class="col-sm-10">
-    <input type="text" class="form-control" 
-      		 id=city name="city" placeholder="도로명주소" >
-    </div>
+<div class="input-group input-group-lg">
+  <span class="input-group-addon" id="basic-addon1">우편번호</span>
+  <input type="text" class="form-control" placeholder="post" aria-describedby="sizing-addon1" id="post" name="post">
 </div>
-<div id="register-container" class="form-group">    
-    <label class="control-label col-sm-2" >상세주소 :</label>
-    <div class="col-sm-10">
-    <input type="text" class="form-control" 
-      		 id=address name="address" placeholder="상세 주소" >
-    </div>
-</div>    
-<button type="button" id = "confirm_btn" class="btn btn-default btn-lg">
- 		<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 확 인 
-</button>
-<button type="button" id = "cancel_btn" class="btn btn-default btn-lg">
- 		<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 취 소
-</button>
-
-<input type="hidden" name="cmd" value="signup"/>
-<input type="hidden" name="page" value="signin"/>
-
+<div class="input-group input-group-lg">
+  <span class="input-group-addon" id="basic-addon1">주   소</span>
+  <input type="text" class="form-control" placeholder="city" aria-describedby="sizing-addon1" id="city" name="city">
+</div>
+<div class="input-group input-group-lg">
+  <span class="input-group-addon" id="basic-addon1">상세주소</span>
+  <input type="text" class="form-control" placeholder="add" aria-describedby="sizing-addon1" id="add" name="add">
+</div>
+<button type="button" class="btn btn-default navbar-btn" id="confirm_btn">확 인</button>
+<button type="button" class="btn btn-default navbar-btn" id="cancel_btn">취 소</button>
+	    <input type="hidden" name="cmd" value="signup" />
+	    <input type="hidden" name="page" value="signin" />
 </form>
 </div>
-<jsp:include page="../home/bottom.jsp"></jsp:include>
+<jsp:include page="../home/bottom.jsp"/>
 <script>
 $('#confirm_btn').click(function(){
+	var cusid = $('#cusid').val();
+	var cusname = $('#cusname').val();
+	var pass = $('#pass').val();
+	var ssn = $('#ssn').val();
+	var phone = $('#phone').val();
+	var post = $('#post').val();
+	var add = $('#add').val();
+	var city = $('#city').val();
 	$('#form')
 	.attr('action', '${ctx}/customer.do')
 	.submit();
-	
-	/*if(empno === ''){
-		alert('사번은 필수입력값입니다 !!');
-		
-	}else if(name === ''){
-		alert('이름은 필수입력값입니다 !!');
-	}else if(manager === ''){
-		alert('매니저는 필수입력값입니다 !!');
-	}else if(birthDate === ''){
-		
-		alert('생년월일은 필수입력값입니다 !!');
-	}else{
-		//alert('사원 DOM 객체의 타입 속성값:'+$('#empno').attr('type'))
-		alert('전송가능');
-		// form.action= '/employee.do'; 
-		// var form = $('#register_form');
-		// form.attr('action', '${ctx}/employee.do');
-		// form.submit();
-		
-	}
-	
-	*/});
-$('#cancel_btn').click(function(){
-	alert('취소버튼클릭!!');
-	});	
+});
 </script>
-<!-- var form = $('#register_form')
-		form.action ='/';
-		form.submit('employee.do') -->
-	
