@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
-<jsp:include page="../home/top.jsp"/>
 <link rel="stylesheet" 
 	href="${css}/customer/list.css" />
 <div class="grid-item" id="nav">
@@ -12,20 +11,19 @@
 		<img src="${img}/${image.imgName}.${image.imgExtention}"style="width: 400px; height: 400px " >
 		<input type="file" name="file_upload"/>
 		<input type="submit" id="file_upload_btn"/>
-	
 	</form>
 </div>
 <div class="grid-item" id="content" >
 	<form id="form">
 		검색한 사람의 정보<br />
-		아이디 ${cust.customerID} <br /> 
-		이름 ${cust.customerName} <br /> 
-		생년월일 ${cust.ssn} <br /> 
-		성별 : 남 <br />
-		전화번호 ${cust.phone} <br /> 
-		우편번호 ${cust.postalCode} <br /> 
-		주소 ${cust.city} <br /> 
-		상세주소 ${cust.address} <br />
+		<div id="customerID">아이디 ${cust.customerID}</div><br /> 
+		<div id="customerName">이름 ${cust.customerName}</div><br />
+		<div id="ssn">생년월일 ${cust.ssn}</div><br /> 
+		<div>성별 : 남</div><br /> 
+		<div id="phone">전화번호 ${cust.phone}</div><br /> 
+		<div id="postalCode">우편번호 ${cust.postalCode}</div><br /> 
+		<div id="city">주소 ${cust.city}</div><br /> 
+		<div id="address">상세주소 ${cust.address}</div><br /> 
 	</form>
 </div>
 <div class="grid-item">
@@ -37,11 +35,9 @@
 <div class="grid-item" style="width: 100%">
 <button type="button" class="btn btn-danger" id="delete_btn" >삭  제</button>
 </div>
-<jsp:include page="../home/bottom.jsp"/>
 <script>
 	$('#update_btn').click(function(){
-		alert('수정버튼클릭');
-		location.assign('${ctx}/customer.do?cmd=cust_retrieve&page=update&customerID=${cust.customerID}');
+		location.assign('${ctx}/move/customer/update');
 	});
 	$('#file_upload_btn').click(function(){
 		alert('사진수정');

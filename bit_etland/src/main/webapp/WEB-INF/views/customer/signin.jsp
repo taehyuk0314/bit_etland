@@ -10,12 +10,10 @@
 	    <div class="grid-item" id="item_1">아이디</div>
 	    <div class="grid-item" id="item_2"><input type="text" id="customerID" name="customerID" value="hong"></div>
 	    <div class="grid-item" id="item_3">비밀번호</div>
-	    <div class="grid-item" id="item_4"><input type="text" id="password" name="password" value="1212"></div>
+	    <div class="grid-item" id="item_4"><input type="text" id="password" name="password" value="1234"></div>
 	    <div class="grid-item" id="item_11"><input type="submit" id="confirm_btn" value='확 인'></div>
 	    <div class="grid-item" id="item_12"><input type="reset" id="cancel_btn" value='취 소'> </div>
 	    <input type="hidden" name="cmd" value="signin" />
-	    <input type="hidden" name="page" value="main" />
-	    <input type="hidden" name="dir" value="category" />
 	</div>
 </form>
 </div>
