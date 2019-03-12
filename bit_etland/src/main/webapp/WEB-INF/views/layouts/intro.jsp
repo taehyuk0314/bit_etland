@@ -29,7 +29,7 @@
   <script src="${lib}/home/isotope/isotope.pkgd.min.js"></script>
 
   <!-- Contact Form JavaScript File -->
-  <script src="resources/contactform/home/contactform.js"></script>
+  <script src="${js}/home/contactform.js"></script>
 
   <script src="${js}/home/main.js"></script>
 </body>

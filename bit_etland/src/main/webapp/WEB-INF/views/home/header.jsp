@@ -6,9 +6,9 @@
 	@File Name: *.jsp
 	@Desc:
 -->
-  <div id="preloader"></div>
+<div id="preloader"></div>
 
-  <header>
+   <header>
     <!-- header-area start -->
     <div id="sticker" class="header-area">
       <div class="container">
@@ -39,7 +39,7 @@
                     <a class="page-scroll" href="#home">Home</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="#about">About</a>
+                    <a class="page-scroll" href="#about">sign in</a>
                   </li>
                   <li>
                     <a class="page-scroll" href="#services">Services</a>
@@ -50,14 +50,6 @@
                   <li>
                     <a class="page-scroll" href="#portfolio">Portfolio</a>
                   </li>
-
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Drop Down<span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href=# >Drop Down 1</a></li>
-                      <li><a href=# >Drop Down 2</a></li>
-                    </ul> 
-                  </li>
-
                   <li>
                     <a class="page-scroll" href="#blog">Blog</a>
                   </li>

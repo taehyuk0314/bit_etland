@@ -210,3 +210,8 @@
   }
 
 })(jQuery);
+
+$('#signin_btn').click(function(){
+	location.assign('${ctx}/move/customer/signin')
+});
+	

@@ -10,7 +10,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
+  <title>eBusiness Bootstrap Template</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
   <meta content="" name="keywords">
   <meta content="" name="description">
 
@@ -36,6 +38,7 @@
   <link href="${css}/home/nivo-slider-theme.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
+  <link href="${css}/home/style.css" rel="stylesheet">
 
   <!-- Responsive Stylesheet File -->
   <link href="${css}/home/responsive.css" rel="stylesheet">
