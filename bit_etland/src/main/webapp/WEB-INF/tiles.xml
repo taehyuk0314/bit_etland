@@ -22,6 +22,26 @@
     <definition name="public:*/*.tiles" extends="public">
     <put-attribute name="main" value="/WEB-INF/views/{1}/{2}.jsp" />
   </definition> -->
-  </tiles-definitions>
+
+  
+   <definition name="no_tiles" template="/WEB-INF/views/layouts/no_template.jsp">
+    <put-attribute name="no_template" value="" />
+  </definition>
+    <definition name="*.jsp" extends="no_tiles">
+    <put-attribute name="no_template" value="/WEB-INF/views/{1}.jsp" />
+  </definition>
+  </tiles-definitions> 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   

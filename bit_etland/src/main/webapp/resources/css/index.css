@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.grid-container  {
+  display: grid;
+  grid-gap: 5px; 
+  grid-template-columns: auto auto auto auto auto auto;
+  padding: 5px; 
+}
+.grid-item {
+  text-align: center;
+}
+#wrapper{
+	font-size: 20px;
+}
+#header{
+    grid-column-start: 1;
+    grid-column-end: 7;
+
+}
+#content{
+	grid-column-start: 1;
+    grid-column-end: 7;
+
+
+}
+#footer{
+    grid-column-start: 1;
+    grid-column-end: 7;
+
+}
+
+
